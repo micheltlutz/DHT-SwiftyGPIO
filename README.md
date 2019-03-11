@@ -30,7 +30,7 @@ To use the provided prebuilt binaries you'll need the install the following depe
 
 [https://github.com/uraimo/SwiftyGPIO](https://github.com/uraimo/SwiftyGPIO)
 
-Download last version swift ARM compatible, see table:
+Download last version swift ARM compatible with your board, see table:
 
 [Build Swift On ARM prebuilt-binaries](https://github.com/uraimo/buildSwiftOnARM#prebuilt-binaries)
 
@@ -105,6 +105,7 @@ let dht = DHT(pin: gpios[.P4]!, for: .dht11)
 Erros iniciais de leitura ocorrem devido a falha inicial do pulso
 
 Usually get a good reading within the past 60s, many times more often than that
+
 
 I hope this project helps start with the creation of IoT projects with Swift
 
