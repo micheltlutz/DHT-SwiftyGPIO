@@ -15,14 +15,14 @@ Model DHT11 or DHT22
 <img width="250" height="250" src="https://github.com/micheltlutz/DHT-SwiftyGPIO/raw/master/midia/DHT22.jpg"/>
 </p>
 
-## Dependencies
+##  Installing Dependencies
 
 To use the provided prebuilt binaries you'll need the install the following dependencies:
 
 ```sudo apt install clang libicu-dev libcurl4-nss-dev```
 
 
-## Using 
+## Starting 
 
 <p align="center" style="padding-bottom:50px;">
 <img src="https://github.com/uraimo/SwiftyGPIO/raw/master/logo.png"/>
@@ -67,7 +67,7 @@ Target: armv7-unknown-linux-gnueabihf
 
 Waiting output should be like this:
 
-```Temperatura: 25.0  Humidate: 41.0```
+```Temperatura: 25.0  Humidade: 41.0```
 
 
 ## Reference files
@@ -95,14 +95,14 @@ init(pin: GPIO, for sensor: SupportedSensor, conversion: ConversionType = .Celsi
 ```
 
 ### Example create module DHT11 Object
-```
+```swift
 let dht = DHT(pin: gpios[.P4]!, for: .dht11)
 
 ```
 
 ### Issues
 
-Initial read errors occur due to initial pulse failure
+Erros iniciais de leitura ocorrem devido a falha inicial do pulso
 
 Usually get a good reading within the past 60s, many times more often than that
 
