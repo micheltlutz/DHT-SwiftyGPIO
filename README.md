@@ -102,7 +102,7 @@ let dht = DHT(pin: gpios[.P4]!, for: .dht11)
 
 ### Issues
 
-Erros iniciais de leitura ocorrem devido a falha inicial do pulso
+Initial read errors occur due to initial pulse failure
 
 Usually get a good reading within the past 60s, many times more often than that
 
